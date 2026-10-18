@@ -69,12 +69,6 @@ module axis_lfsr #(
                 cooldown_counter <= (cooldown_counter == 0) ? 0 : cooldown_counter - 1;
             end
         end
-
-        // if(tvalid && tready) begin
-        //     for(i = 0; i < 16; i = i+1) begin
-        //         staged_data[4*(i+1)-1 -: 4] <= i_s[7*(16-i)-1 -: 4];
-        //     end
-        // end
     end
 
 endmodule
